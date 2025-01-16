@@ -14,7 +14,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const todosApi = createApi({
   reducerPath: 'todosApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://mern-boilerplate-jogo-backend.vercel.app/api"
+    baseUrl: "https://mern-boilerplate-jogo-backend.onrender.com/api"
   }),
   endpoints: (builder) => ({
     getTodos: builder.query<TTodo[], number|void>({
